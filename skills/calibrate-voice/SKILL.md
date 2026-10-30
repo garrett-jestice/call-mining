@@ -35,6 +35,12 @@ Work down this list. Stop at the first one that works.
 2. **A content tool's export or MCP** (post schedulers and analytics tools often hold this history).
 3. **A platform data export.** Most platforms let a user download their own post archive. Ask them to
    run it and point at the file.
+   **On LinkedIn, use the full data archive.** The analytics export has impressions but stops at 365
+   days. The archive (Settings & Privacy, then Data privacy, then Download your data, and pick the
+   larger download) holds their posts in `Shares.csv` without impressions. LinkedIn says it can take
+   up to 24 hours, so offer to pick this step back up when it lands. If it comes up short, top it up
+   with a manual paste (item 4). Never recommend a scraper or a LinkedIn automation tool to fill the
+   gap: automated access puts their account at risk.
 4. **A manual paste.** Ask for their last 30-50 posts. Tedious, but it works, and text alone still
    supports every rhythm and language measurement. Only the rate-based rankings are lost.
 
@@ -248,5 +254,7 @@ calibrated.
 - Do not report a number without its sample size and date.
 - Do not overwrite a superseded number. Date it and keep both.
 - Do not generalize a finding from one account into a rule about the platform.
-- Do not measure a sample under 20 posts. Take the Step 6 path instead.
+- Do not measure a sample under 20 posts. Take the Step 7 path instead.
 - Do not invent a target because a file expects one. `not enough data` is a valid value.
+- Do not recommend a scraper or a LinkedIn automation tool for pulling posts. It puts their account
+  at risk.

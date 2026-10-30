@@ -92,10 +92,11 @@ slower every week than reading a file.
 | Setting | Your value |
 |---|---|
 | Version installed | `[filled in at setup]` |
-| Update source | `[URL to the latest pack, or "manual"]` |
+| Update source | `https://github.com/garrett-jestice/call-mining/archive/refs/heads/main.zip` |
 
-`manual` means whoever sent you this will send a new zip when there is one. `/call-mining-update`
-handles either way. Include the version when you report a bug.
+That link is the public repo, so `/call-mining-update` can fetch a new version on its own. Change it
+to `manual` if you would rather install updates from a zip yourself. Include the version when you
+report a bug.
 
 ---
 

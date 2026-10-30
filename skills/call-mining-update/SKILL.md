@@ -43,14 +43,17 @@ If neither has a version, they are on 1.0.0 or earlier. Say so and continue.
 
 ## Step 2: Get the new pack
 
-Check the update source in `config.md`.
+Check the update source in `config.md`. Since 1.1.1 it defaults to the public repo:
+`https://github.com/garrett-jestice/call-mining/archive/refs/heads/main.zip`
 
-- **A URL:** fetch it. Use whatever is available: a web fetch tool, or `curl -L` through the shell.
-- **`manual`, or blank:** ask whether they have been sent a new zip. If yes, get the path. If no, say
-  there is nothing to update from and stop. Do not invent a source.
+- **A URL:** download it with `curl -L` through the shell. A zip needs a real download, which a web
+  page reader cannot do.
+- **`manual`, blank, or still the placeholder:** ask whether they have been sent a new zip. If yes,
+  get the path. If no, offer to fetch the public repo above instead. Do not invent any other source.
 - **The fetch fails:** say what failed and fall back to asking for a zip. Do not retry silently.
 
-Unpack it to a scratch location. **Do not unpack over their existing pack.**
+Unpack it to a scratch location. **Do not unpack over their existing pack.** A zip from GitHub
+unpacks into one folder, `call-mining-main/`, and that folder is the new pack.
 
 ## Step 3: Compare
 

@@ -7,8 +7,8 @@ Put this folder somewhere you work, open Claude Code there, and say:
 > **set up Call Mining**
 
 That runs `/call-mining-setup`, which installs the skills, finds your recorder, fills in the config
-one question at a time, and runs calibration. About 15 minutes, no prior Claude Code experience
-needed.
+one question at a time, and runs calibration. Plan on about an hour, with no prior Claude Code
+experience needed.
 
 **Everything below is the manual version of that**, for anyone who would rather do it themselves or
 needs to fix one piece later.
@@ -27,7 +27,9 @@ needs to fix one piece later.
   works too.
 
 **Helpful but optional:**
-- 30 or more of your own past posts, for calibration
+- 30 or more of your own past posts, for calibration. On LinkedIn, request your data archive a day
+  ahead: Settings & Privacy, then Data privacy, then Download your data, and pick the larger
+  download. Your posts come in `Shares.csv`.
 - Engagement data on those posts (impressions especially)
 - A file where you log open decisions
 
@@ -187,9 +189,10 @@ your voice file if it needs judgment. The log stays short on purpose.
 **Recalibration.** Quarterly, or after 50 new posts. Your writing changes and feeds change. A
 calibration file older than a quarter is a hypothesis, not a target.
 
-**Updates.** Run `/call-mining-update` when you are told there is a new version. It replaces the
-system and leaves your config, your calibration files, your corrections log, and anything you
-customized alone. It backs up the old version first, and asks before touching a skill you edited.
+**Updates.** Run `/call-mining-update` now and then. It checks the public repo and stops if you are
+already current. Otherwise it replaces the system and leaves your config, your calibration files,
+your corrections log, and anything you customized alone. It backs up the old version first, and
+asks before touching a skill you edited.
 
 **The published folder.** `/mine-calls` reads it to find loops worth closing and to flag overlap.
 `/interview` reads it to avoid asking what you already answered publicly.
@@ -221,6 +224,10 @@ Claude Code can actually call. Ask it: "what tools do you have for my recorder?"
 **"I have no recorder at all."** Set every recorder row to `none`. `/mine-calls` will ask you to
 paste transcripts. You can also paste notes from a call you did not record: the four classification
 questions work on any account of a real conversation.
+
+**"LinkedIn only gave me the last year of posts."** LinkedIn's analytics export stops at 365 days.
+Request the full data archive instead (see What you need). If you still end up under 20 posts, paste
+older ones in by hand from your activity page.
 
 **"The interview asks about things I already wrote about."** Point `config.md` at your published
 folder. Step 2 of the interview reads it specifically to avoid this.

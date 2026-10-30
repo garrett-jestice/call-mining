@@ -8,7 +8,7 @@ description: Install and configure the Call Mining system for a first-time user.
 **Assume the user has never used Claude Code before.** Do the work for them rather than telling them
 what to do. Ask one question at a time. Never present the whole config file as a form to fill in.
 
-The whole thing should take about 15 minutes of their attention.
+The whole thing takes about an hour of their attention.
 
 ---
 
@@ -23,7 +23,12 @@ Then say what this is, briefly, in your own words: a system that reads their cal
 what is worth posting about, asks them a few questions a recording could not answer, and drafts from
 those answers. Three commands, once a week.
 
-Ask: **"Ready to set it up? Takes about 15 minutes."**
+Ask: **"Ready to set it up? Plan on about an hour."**
+
+If they post on LinkedIn, ask them to request their data archive before anything else: Settings &
+Privacy, then Data privacy, then Download your data, and pick the larger download. LinkedIn says it
+can take up to 24 hours, and Step 5 reads their past posts from it. Skip this if their posts already
+live somewhere you can read.
 
 ## Step 1: Install the skills
 
@@ -167,6 +172,9 @@ Say what each one is, in one line each:
 Ask: *"Do you have past posts I could learn your writing from? Thirty or more is ideal."*
 
 **If yes:** run `/calibrate-voice`. It handles finding them.
+
+**If their LinkedIn archive has not arrived yet:** go on to Step 6 and come back here when it lands.
+Calibrate before drafting in 6c.
 
 **If they are unsure:** run it anyway. It reports what it found and takes the right path.
 

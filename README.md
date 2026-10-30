@@ -1,6 +1,6 @@
 # Call Mining
 
-`v1.1.0` : see [CHANGELOG.md](CHANGELOG.md). Update with `/call-mining-update`.
+`v1.1.1` : see [CHANGELOG.md](CHANGELOG.md). Update with `/call-mining-update`.
 
 **Turn the calls you already had into the posts you never get around to writing.**
 
@@ -22,7 +22,12 @@ Open Claude Code in that folder. Say:
 > **set up Call Mining**
 
 It installs itself, works out which call recorder you use, asks you six questions, and learns your
-writing from your past posts. About 15 minutes, and you do not need to have used Claude Code before.
+writing from your past posts. Plan on about an hour, and you do not need to have used Claude Code
+before.
+
+**Post on LinkedIn?** Request your data archive before you start: Settings & Privacy, then Data
+privacy, then Download your data, and pick the larger download. LinkedIn says it can take up to 24
+hours, and setup reads your past posts from it.
 
 Prefer to do it by hand? [SETUP.md](SETUP.md) has every step.
 
